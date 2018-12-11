@@ -1,6 +1,7 @@
 --- 
 - name: Ping
   hosts: all 
+  connection: winrm
  
   tasks:
   - name: Ping
