@@ -1,6 +1,6 @@
 ---
 name: Run Updates on Terminal Servers then wait 7 mins
-  hosts: WinPatchInv
+  hosts: 10.250.80.223
   connection: winrm
 
   tasks:
