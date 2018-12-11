@@ -1,12 +1,12 @@
 --- 
 connection: winrm
 hosts: "10.250.80.223"
- win_updates: 
-  category_names: 
-   - Application
-   - CriticalUpdates
-   - DefinitionUpdates
-   - SecurityUpdates
-   - Updates
-  reboot: true
-  reboot_timeout: 300
+win_updates: 
+ category_names: 
+  - Application
+  - CriticalUpdates
+  - DefinitionUpdates
+  - SecurityUpdates
+  - Updates
+ reboot: true
+ reboot_timeout: 300
