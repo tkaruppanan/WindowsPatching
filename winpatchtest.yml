@@ -1,11 +1,10 @@
 --- 
 -name: Ping
  hosts: 10.250.80.223 
- connection:winrm
-
+ 
  tasks:
- - name: Ping
-   win_ping:
+ -name: Ping
+  win_ping:
 
  
  
