@@ -1,6 +1,6 @@
 --- 
 - name: Ping
-  hosts: 10.250.80.223 
+  hosts: all 
  
   tasks:
   - name: Ping
