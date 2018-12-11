@@ -1,7 +1,6 @@
 --- 
 - name: Ping
-  hosts: 
-   ansible_host: 10.250.80.223 
+  hosts: 10.250.80.223 
  
   tasks:
   - name: Ping
