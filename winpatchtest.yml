@@ -1,5 +1,4 @@
 --- 
-- 
   connection: winrm
   hosts: "10.250.80.223"
   win_updates: 
