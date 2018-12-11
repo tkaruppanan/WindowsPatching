@@ -2,9 +2,9 @@
 - name: Ping
   hosts: 10.250.80.223 
  
- tasks:
- - name: Ping
-   win_ping:
+  tasks:
+  - name: Ping
+    win_ping:
 
  
  
