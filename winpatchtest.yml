@@ -1,4 +1,4 @@
 --- 
 hosts:10.250.80.223
-connection: winrm
+connection:winrm
 
