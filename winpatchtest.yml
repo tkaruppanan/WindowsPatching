@@ -1,6 +1,6 @@
 --- 
 - name: Ping
-  hosts: localhost 
+  hosts: WinPatchInv 
  
   tasks:
   - name: Ping
