@@ -2,6 +2,9 @@
 - name: Ping
   hosts: all 
   connection: winrm
+  username: karuppt
+  password: Tcs@*(18
+  validate_certs: False
  
   tasks:
   - name: Ping
