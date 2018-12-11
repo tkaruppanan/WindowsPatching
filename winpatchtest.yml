@@ -1,11 +1,11 @@
 ---
 name: Run Updates on Terminal Servers then wait 7 mins
-  hosts: 10.250.80.223
-  connection: winrm
+hosts: 10.250.80.223
+connection: winrm
 
-  tasks:
-    win_updates:
-      category_names:
+tasks:
+  win_updates:
+    category_names:
         - Application
         - CriticalUpdates
         - DefinitionUpdates
