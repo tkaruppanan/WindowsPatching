@@ -1,6 +1,7 @@
 --- 
 - name: Ping
-  hosts: WinPatchInv 
+  hosts: 
+   ansible_host: 10.250.80.223 
  
   tasks:
   - name: Ping
