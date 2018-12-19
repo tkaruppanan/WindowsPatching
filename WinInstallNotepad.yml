@@ -1,9 +1,17 @@
 --- 
-- 
-  name: "Installing Notepad++"
-  when: "ansible_os_family == 'Windows'"
-  win_package: 
-    arguments: /S
-    path: "https://notepad-plus-plus.org/repository/7.x/7.5.1/npp.7.5.1.Installer.x64.exe"
-    product_id: Notepad++
-    state: present
+- name: Ping
+  hosts: all 
+  connection: winrm
+ 
+  vars:
+    machine:
+      username: '{{ ansible_user }}'
+      password: '{{ ansible_password }}'
+    vmware:
+      host: '{{ lookup("env", "VMWARE_HOST") }}'
+      username: '{{ lookup("env", "VMWARE_USER") }}'
+      password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
+ 
+  tasks:
+  - name: Ping
+    win_ping:
