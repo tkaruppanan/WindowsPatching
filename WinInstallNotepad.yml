@@ -1,0 +1,7 @@
+- name: Installing Notepad++
+  win_package:
+    path: https://notepad-plus-plus.org/repository/7.x/7.5.1/npp.7.5.1.Installer.x64.exe
+    arguments: '/S'
+    product_id: "Notepad++"
+    state: present
+  when: ansible_os_family == 'Windows'
